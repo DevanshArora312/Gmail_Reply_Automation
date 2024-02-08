@@ -1,4 +1,4 @@
-﻿﻿# Gmail Reply Automation
+﻿# Gmail Reply Automation
 
 An application for automating email replies when you're on vacation using Gmail's API.
 
