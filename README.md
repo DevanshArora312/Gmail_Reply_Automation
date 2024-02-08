@@ -34,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```shell
-   git clone [https://github.com/aaaa760/openinapp.git](https://github.com/DevanshArora312/Gmail_Reply_Automation.git)
+   git clone https://github.com/DevanshArora312/Gmail_Reply_Automation.git
    cd Gmail_Reply_Automation
    npm install
 
