@@ -1,4 +1,4 @@
-﻿# Autoreply_email
+﻿﻿# Gmail Reply Automation
 
 An application for automating email replies when you're on vacation using Gmail's API.
 
@@ -9,7 +9,6 @@ An application for automating email replies when you're on vacation using Gmail'
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 
 ## Introduction
 
@@ -35,25 +34,26 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/aaaa760/openinapp.git
-   cd openinapp
+   git clone [https://github.com/aaaa760/openinapp.git](https://github.com/DevanshArora312/Gmail_Reply_Automation.git)
+   cd Gmail_Reply_Automation
    npm install
 
 
  ## Usage
 
-1. Start the application
-
-    ```shell
-   node index.js
-
    
-2. Access the application in your web browser at http://localhost:8000.
-3. Click the "Authenticate with Gmail" button to initiate the Gmail API authentication process.
-4. Enjoy your vacation without worrying about email replies!
+1. Store your Gmail API info in `credentials.json` file.
+2. Start the application
+```
+   node app.js
+```
+3. For first usage visit the link in terminal to initiate the Gmail API authentication process and create a token.json file.
+4. Make sure to add your email and name in `details.js` file with format
+   ```
+   const YourEmail = "Your-Email@gmail.com"
+   const YourName = "Your Name"
+   
+   module.exports = {YourEmail,YourName} 
+   ```
+6. Enjoy your vacation without worrying about email replies!
 
-
-  ## License
-  
-This project is licensed under the MIT License
- 

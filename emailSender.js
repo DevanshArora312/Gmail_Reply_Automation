@@ -1,6 +1,8 @@
 const { google } = require('googleapis');
 const gmail = google.gmail('v1');
 
+const personalDetails = require("./details.js");
+// console.log(personalDetails)
 async function sendReply(auth, email,headers) {
     try {
 
@@ -15,7 +17,7 @@ async function sendReply(auth, email,headers) {
         })
         // console.log(details);
         const messageParts = [
-            'From: devansharora312@gmail.com', // Your Gmail address
+            `From: ${personalDetails.YourEmail}`, // Your Gmail address
             'To: ' + details.From,
             'Content-Type: text/plain; charset=utf-8',
             'Subject: Re: ' + details.Subject,
@@ -24,7 +26,7 @@ async function sendReply(auth, email,headers) {
             'Thank you for your email. I am currently out of the office and will get back to you as soon as possible.',
             '',
             'Best regards,',
-            'Devansh Arora'
+            `${personalDetails.YourName}`
         ];
 
         const rawMessage = messageParts.join('\n');
